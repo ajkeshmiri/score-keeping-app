@@ -24,12 +24,16 @@ button[4].addEventListener('click', function () {
     reset();
 })
 button[1].addEventListener('click', function () {
-    p1Score--;
-    p1.innerText = p1Score;
+    if (p1Score >= 1) {
+        p1Score--;
+        p1.innerText = p1Score;
+    }
 })
 button[3].addEventListener('click', function () {
-    p2Score--;
-    p2.innerText = p2Score;
+    if (p2Score >= 1) {
+        p2Score--;
+        p2.innerText = p2Score;
+    }
 })
 
 const reset = () => {
