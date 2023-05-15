@@ -5,10 +5,12 @@ let p1Score = 0;
 let p2Score = 0;
 let targetScore = document.querySelector('select').selectedOptions[0].value;
 const winningPlayer = document.querySelector('#winningPlayer');
-const winByTwo = document.querySelector('#checkbox').checked;
 
 document.querySelector('select').addEventListener('change', function () {
     targetScore = document.querySelector('select').selectedOptions[0].value;
+})
+document.querySelector('#checkbox').addEventListener('change', function () {
+    winByTwo = false;
 })
 
 button[0].addEventListener('click', function () {
@@ -67,9 +69,9 @@ function checkWin() {
         winningPlayer.innerText = 'Two';
         p1.classList.add('loser');
         p2.classList.add('winner');
-
     }
 }
+
 function winner() {
     button[0].classList.add("hide");
     button[1].classList.add("hide");
