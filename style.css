@@ -10,7 +10,7 @@ img {
 
 .winner {
     color: lightgreen;
-    transition: .25s ease-in;
+    transition: .15s ease-in;
 }
 
 .loser {

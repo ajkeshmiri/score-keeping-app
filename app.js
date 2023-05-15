@@ -5,6 +5,7 @@ let p1Score = 0;
 let p2Score = 0;
 let targetScore = document.querySelector('select').selectedOptions[0].value;
 const winningPlayer = document.querySelector('#winningPlayer');
+const winByTwo = document.querySelector('#checkbox').checked;
 
 document.querySelector('select').addEventListener('change', function () {
     targetScore = document.querySelector('select').selectedOptions[0].value;
