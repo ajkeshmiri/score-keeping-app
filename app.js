@@ -46,10 +46,8 @@ const reset = () => {
     button[2].classList.remove("hide");
     button[3].classList.remove("hide");
     banner.classList.add('hide');
-    p1.classList.remove('loser');
-    p1.classList.remove('winner');
-    p2.classList.remove('winner');
-    p2.classList.remove('loser');
+    p1.classList.remove('loser', 'winner');
+    p2.classList.remove('winner', 'loser');
     button[4].classList.remove('increase');
 }
 
