@@ -7,47 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthevolleyllama.com%2Fwp-content%2Fuploads%2F2019%2F03%2FAdobeStock_89426340.jpeg&f=1&nofb=1&ipt=9921e18880a12d5e0b096095acf6cb25db120490ad2d1c1123d971c6085e01e3&ipo=images"
-        alt="">
-        <h1>Score Keeper</h1>
-    <div class="playingTo">
-        <label for="points">Playing To: </label>
-        <select name="points" id="points">
-            <option value="5">5</option>
-            <option value="11">11</option>
-            <option value="21">21</option>
-        </select>
-    </div>
-    <h2>Score:</h2>
-    <div id="score">
-        <span id="p1">0</span>
-        <span>:</span>
-        <span id="p2">0</span>
-    </div>
-    <div class="allButtons">
-        <div class="playerOneButtons">
-            <button id="p1Plus">Player One: +1</button>
-            <button id="p1Minus">Player One: -1</button>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header">
+                        <h1>Score Keeper</h1>
+                        <div class="card-content">
+                            <div class="card-content">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthevolleyllama.com%2Fwp-content%2Fuploads%2F2019%2F03%2FAdobeStock_89426340.jpeg&f=1&nofb=1&ipt=9921e18880a12d5e0b096095acf6cb25db120490ad2d1c1123d971c6085e01e3&ipo=images"
+                                    alt="">
+                                <div class="playingTo">
+                                    <label for="points">Playing To: </label>
+                                    <select name="points" id="points">
+                                        <option value="5">5</option>
+                                        <option value="11">11</option>
+                                        <option value="21">21</option>
+                                    </select>
+                                </div>
+                                <h2>Score:</h2>
+                                <div id="score">
+                                    <span id="p1">0</span>
+                                    <span>:</span>
+                                    <span id="p2">0</span>
+                                </div>
+                                <footer class="allButtons">
+                                    <div class="playerOneButtons">
+                                        <button class='button is-large card-footer-item' id="p1Plus">Player One:
+                                            +1</button>
+                                        <button class='button is-large' id="p1Minus">Player One: -1</button>
+                                    </div>
+                                    <div class="playerTwoButtons">
+                                        <button class='button is-large' id="p2Plus">Player Two: +1</button>
+                                        <button class='button is-large' id="p2Minus">Player Two: -1</button>
+                                    </div>
+                                    <button class='button is-large' id="scoreReset">Reset</button>
+                                </footer>
+                                <div id='banner' class="hide">
+                                    <span>Player </span>
+                                    <span id="winningPlayer"></span>
+                                    <span> Wins!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
         </div>
-        <div class="playerTwoButtons">
-            <button id="p2Plus">Player Two: +1</button>
-            <button id="p2Minus">Player Two: -1</button>
-        </div>
-    </div>
-    <div>
-        <button id="scoreReset">Reset</button>
-    </div>
-    <div id='banner' class="hide">
-        <span>Player </span>
-        <span id="winningPlayer"></span>
-        <span> Wins!</span>
-    </div>
 
 
-    <script src="app.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
