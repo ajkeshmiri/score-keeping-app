@@ -1,5 +1,7 @@
 img {
-    border-radius: 2em;
+    height: 30vh;
+    width: 50vh;
+
 }
 
 .hide {
@@ -17,8 +19,22 @@ img {
 }
 
 body {
+    display: grid;
+    place-items: center;
     background-color: rgb(40, 40, 42);
     color: rgb(230, 230, 240);
+}
+
+.allButtons {
+    display: flex;
+}
+
+.playerOneButtons {
+    display: grid;
+}
+
+.playerTwoButtons {
+    display: grid;
 }
 
 button {
@@ -48,7 +64,7 @@ button {
 }
 
 #banner span {
-    font-size: 4em;
+    font-size: 6em;
 }
 
 .playingTo {
